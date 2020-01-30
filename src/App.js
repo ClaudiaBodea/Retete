@@ -11,6 +11,16 @@ import {
   MDBNavLink
 } from "mdbreact";
 import "./App.css";
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBBtn,
+  MDBCol,
+  MDBRow,
+  MDBContainer
+} from "mdbreact";
 
 class App extends Component {
   constructor(props) {
@@ -86,7 +96,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <MDBNavbar color="indigo" dark expand="md">
+        <MDBNavbar color="default-color" dark expand="md">
           <MDBNavbarBrand>
             <strong className="white-text">Bucate</strong>
           </MDBNavbarBrand>

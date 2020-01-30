@@ -35,7 +35,7 @@ class Formular extends Component {
   render() {
     return (
       <div>
-        <h2 className="text-center">Introduceti reteta</h2>
+        <h2 className="text-center">Reteta noua:</h2>
         <form className="mx-3 grey-text">
           <MDBInput
             name="dificultate"
@@ -76,7 +76,7 @@ class Formular extends Component {
             onChange={this.handleChange}
           />
           <div className="text-center">
-            <MDBBtn color="indigo" onClick={this.adaugaCard}>
+            <MDBBtn gradient="aqua" onClick={this.adaugaCard}>
               Adaugă reteta
             </MDBBtn>
           </div>
