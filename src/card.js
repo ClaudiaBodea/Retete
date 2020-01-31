@@ -9,7 +9,8 @@ import {
   MDBBtn,
   MDBCol,
   MDBRow,
-  MDBContainer
+  MDBContainer,
+  MDBCardImage
 } from "mdbreact";
 
 class Card extends Component {
@@ -21,6 +22,12 @@ class Card extends Component {
             <MDBJumbotron className="p-0">
               <MDBCardBody>
                 <MDBCardTitle className="h3">{this.props.nume}</MDBCardTitle>
+
+                <MDBCardImage
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                  className="img-fluid"
+                />
+
                 <MDBCardText>
                   <h6>Dificultate:</h6>
                   <p>{this.props.dificultate}</p>
@@ -46,29 +53,36 @@ class Card extends Component {
 export default Card;
 
 // class Card extends Component {
-//     render() {
-//       return (
-//         <>
-//           <h2>{this.props.nume}</h2>
+//   render() {
+//     return (
+//       <MDBContainer>
+//         <MDBRow className="mb-4">
+//           <MDBCol sm="6">
+//             <MDBCard>
+//               <MDBCardBody>
+//                 <MDBCardTitle>{this.props.nume}</MDBCardTitle>
+//                 <MDBCardText>
+//                   <h6>Dificultate:</h6>
+//                   <p>{this.props.dificultate}</p>
+//                   <h6>Ingrediente:</h6> <p>{this.props.ingrediente}</p>
+//                   <h6>Preparare:</h6> <p>{this.props.preparare}</p>
+//                 </MDBCardText>
 
-//           <h4>Dificultate:{this.props.dificultate}</h4>
-
-//           <h6>
-//             Ingrediente: {this.props.ingrediente}
-//             <MDBBtn
-//               gradient="aqua"
-//               className="float-right"
-//               id={this.props.id}
-//               onClick={this.props.stergeCard}
-//             >
-//               Sterge
-//             </MDBBtn>
-//           </h6>
-//           <p>Preparare: {this.props.preparare}</p>
-//           <hr />
-//         </>
-//       );
-//     }
+//                 <MDBBtn
+//                   gradient="aqua"
+//                   className="float-right"
+//                   id={this.props.id}
+//                   onClick={this.props.stergeCard}
+//                 >
+//                   Sterge
+//                 </MDBBtn>
+//               </MDBCardBody>
+//             </MDBCard>
+//           </MDBCol>
+//         </MDBRow>
+//       </MDBContainer>
+//     );
 //   }
+// }
 
-//   export default Card;
+// export default Card;
